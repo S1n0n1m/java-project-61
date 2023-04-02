@@ -9,3 +9,6 @@ build:
 
 clean:
 	./gradlew clean
+
+dist:
+	./gradlew installDist
