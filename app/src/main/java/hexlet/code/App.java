@@ -2,6 +2,7 @@ package hexlet.code;
 
 import hexlet.code.games.CalcGame;
 import hexlet.code.games.EvenGame;
+import hexlet.code.games.GcdGame;
 
 import java.util.Scanner;
 
@@ -25,8 +26,9 @@ public class App {
 
         switch (selectionGame) {
             case 1 -> Cli.greeting();
-            case 2 -> EvenGame.launchTheGame();
-            case 3 -> CalcGame.launchTheGame();
+            case 2 -> EvenGame.launchEvenGame();
+            case 3 -> CalcGame.launchCalcGame();
+            case 4 -> GcdGame.launchGcdGame();
             default -> System.out.println();
         }
     }
