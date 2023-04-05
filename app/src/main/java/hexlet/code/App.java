@@ -33,6 +33,7 @@ public class App {
             case 4 -> GcdGame.launchGcdGame();
             case 5 -> ProgressionGame.launchProgressionGame();
             case 6 -> PrimeGame.launchPrimeGame();
+            case 0 -> System.out.println("Bye!");
             default -> throw new IllegalStateException("Unexpected value: " + selectionGame);
         }
     }

@@ -11,7 +11,7 @@ public class EvenGame {
     private static final int ANSWER_NUMBER = 1;
 
     public static void launchEvenGame() {
-        String gameRules = "Answer 'yes' in the number is even, otherwise answer 'no'";
+        String gameRules = "Answer 'yes' in the number is even, otherwise answer 'no'.";
 
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
             int questionNumber = (int) (Math.random() * MAX_RANDOM_NUMBER);
