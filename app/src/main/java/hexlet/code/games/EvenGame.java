@@ -19,6 +19,7 @@ public class EvenGame {
         }
         Engine.launchGame(GAME_RULES, QUESTIONS_ANSWER);
     }
+
     private static boolean isEven(int currentNumber) {
         return currentNumber % 2 == 0;
     }

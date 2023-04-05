@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Engine {
     private static final int QUESTIONS_NUMBER = 0;
     private static final int ANSWER_NUMBER = 1;
+
     public static void launchGame(String gameRules, String[][] questionsAnswer) {
         Scanner console = new Scanner(System.in);
         System.out.println("\nWelcome to the Brain Games!");

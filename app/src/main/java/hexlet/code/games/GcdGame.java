@@ -16,6 +16,7 @@ public class GcdGame {
         }
         return gcd(secondNum, firstNum % secondNum);
     }
+
     public static void launchGcdGame() {
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
             int firstNum = (int) (Math.random() * MAX_RANDOM_NUMBER - 1);

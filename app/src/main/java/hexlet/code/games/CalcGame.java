@@ -10,6 +10,7 @@ public class CalcGame {
     private static final int QUESTIONS_NUMBER = 0;
     private static final int ANSWER_NUMBER = 1;
     public static final String GAME_RULES = "What is the result of the expression?";
+
     public static void launchCalcGame() {
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
             int firstNum = (int) (Math.random() * MAX_RANDOM_NUMBER - 1);

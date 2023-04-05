@@ -9,6 +9,7 @@ public class PrimeGame {
     private static final int QUESTIONS_NUMBER = 0;
     private static final int ANSWER_NUMBER = 1;
     private static final String GAME_RULES = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
+
     public static void launchPrimeGame() {
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
             int questionNumber = (int) (Math.random() * MAX_RANDOM_NUMBER);
@@ -17,6 +18,7 @@ public class PrimeGame {
         }
         Engine.launchGame(GAME_RULES, QUESTIONS_ANSWER);
     }
+
     public static boolean isPrime(int currentNumber) {
         if (currentNumber < 2) {
             return false;
