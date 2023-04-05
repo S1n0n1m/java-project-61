@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import hexlet.code.Utils;
 
 
 public class ProgressionGame {
@@ -15,9 +14,9 @@ public class ProgressionGame {
     public static void launchProgressionGame() {
         String gameRules = "What number is missing in the progression?";
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
-            var step = Utils.randomGenerator(MIN, MAX_STEP);
-            var firstNumber = Utils.randomGenerator(MIN, MAX);
-            int hiddenNumber = Utils.randomGenerator(0, PROGRESSION_LENGTH - 1);
+            var step = randomGenerator(MIN, MAX_STEP);
+            var firstNumber = randomGenerator(MIN, MAX);
+            int hiddenNumber = randomGenerator(0, PROGRESSION_LENGTH - 1);
             String[] progression = generateProgression(firstNumber, step, PROGRESSION_LENGTH);
             var correctAnswer = progression[hiddenNumber];
             progression[hiddenNumber] = "..";
@@ -34,6 +33,9 @@ public class ProgressionGame {
             number += step;
         }
         return progression;
+    }
+    public static int randomGenerator(int min, int max) {
+        return (int) (Math.random() * (max - min)) + min;
     }
 }
 
