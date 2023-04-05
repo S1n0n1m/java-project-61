@@ -7,7 +7,7 @@ public class Engine {
     private static final int ANSWER_NUMBER = 1;
     public static void launchGame(String gameRules, String[][] questionsAnswer) {
         Scanner console = new Scanner(System.in);
-        System.out.println("Welcome to the Brain Games!");
+        System.out.println("\nWelcome to the Brain Games!");
         System.out.print("May I have your name? ");
         String username = console.nextLine();
         System.out.println("Hello, " + username + "!");
