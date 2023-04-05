@@ -15,7 +15,7 @@ public class Engine {
 
         for (String[] strings : questionsAnswer) {
             String correctAnswer = strings[ANSWER_NUMBER];
-            System.out.println("Questions: " + strings[QUESTIONS_NUMBER]);
+            System.out.println("Question: " + strings[QUESTIONS_NUMBER]);
             System.out.print("Your answer: ");
             var currentAnswer = console.nextLine();
             boolean isAnswerCorrect = currentAnswer.equals(correctAnswer);
