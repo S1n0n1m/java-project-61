@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.CalcGame;
 import hexlet.code.games.EvenGame;
 import hexlet.code.games.GcdGame;
+import hexlet.code.games.ProgressionGame;
 
 import java.util.Scanner;
 
@@ -29,6 +30,7 @@ public class App {
             case 2 -> EvenGame.launchEvenGame();
             case 3 -> CalcGame.launchCalcGame();
             case 4 -> GcdGame.launchGcdGame();
+            case 5 -> ProgressionGame.launchProgressionGame();
             default -> System.out.println();
         }
     }
