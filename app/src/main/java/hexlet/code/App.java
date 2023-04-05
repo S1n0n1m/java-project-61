@@ -1,9 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.games.CalcGame;
 import hexlet.code.games.EvenGame;
+import hexlet.code.games.CalcGame;
 import hexlet.code.games.GcdGame;
 import hexlet.code.games.ProgressionGame;
+import hexlet.code.games.PrimeGame;
 
 import java.util.Scanner;
 
@@ -31,7 +32,8 @@ public class App {
             case 3 -> CalcGame.launchCalcGame();
             case 4 -> GcdGame.launchGcdGame();
             case 5 -> ProgressionGame.launchProgressionGame();
-            default -> System.out.println();
+            case 6 -> PrimeGame.launchPrimeGame();
+            default -> throw new IllegalStateException("Unexpected value: " + selectionGame);
         }
     }
 }
