@@ -19,10 +19,17 @@ public class CalcGame {
             char operator = mathOperators[randomOperators];
             int answer;
             switch (operator) {
-                case '*' -> answer = firstNum * secondNum;
-                case '-' -> answer = firstNum - secondNum;
-                case '+' -> answer = firstNum + secondNum;
-                default -> throw new IllegalStateException("Unexpected value: " + operator);
+                case '*':
+                    answer = firstNum * secondNum;
+                    break;
+                case '-':
+                    answer = firstNum - secondNum;
+                    break;
+                case '+':
+                    answer = firstNum + secondNum;
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + operator);
             }
             QUESTIONS_ANSWER[i][ANSWER_NUMBER] = String.valueOf(answer);
             QUESTIONS_ANSWER[i][QUESTIONS_NUMBER] = firstNum + " " + operator + " " + secondNum;
