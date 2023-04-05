@@ -10,9 +10,8 @@ public class ProgressionGame {
     private static final int MAX_STEP = 5;
     private static final String[][] QUESTIONS_ANSWER = new String[QUESTIONS_COUNT][2];
     private static final int PROGRESSION_LENGTH = 8;
-
+    public static final String GAME_RULES = "What number is missing in the progression?";
     public static void launchProgressionGame() {
-        String gameRules = "What number is missing in the progression?";
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
             var step = randomGenerator(MIN, MAX_STEP);
             var firstNumber = randomGenerator(MIN, MAX);
@@ -23,7 +22,7 @@ public class ProgressionGame {
             var questions = String.join(" ", progression);
             QUESTIONS_ANSWER[i] = new String[] {questions, correctAnswer};
         }
-        Engine.launchGame(gameRules, QUESTIONS_ANSWER);
+        Engine.launchGame(GAME_RULES, QUESTIONS_ANSWER);
     }
 
     public static String[] generateProgression(int number, int step, int progressionLength) {
