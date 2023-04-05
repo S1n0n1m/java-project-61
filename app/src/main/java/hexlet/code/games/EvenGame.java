@@ -9,7 +9,7 @@ public class EvenGame {
     private static final String[][] QUESTIONS_ANSWER = new String[QUESTIONS_COUNT][2];
     private static final int QUESTIONS_NUMBER = 0;
     private static final int ANSWER_NUMBER = 1;
-    private static final String GAME_RULES = "Answer 'yes' in the number is even, otherwise answer 'no'.";
+    private static final String GAME_RULES = "Answer 'yes' if the number is even, otherwise answer 'no'.";
 
     public static void launchEvenGame() {
         for (int i = 0; i < QUESTIONS_COUNT; i++) {
