@@ -29,11 +29,11 @@ public class App {
         String selectionGame = console.nextLine();
         switch (selectionGame) {
             case GREET -> Cli.greeting();
-            case EVEN -> EvenGame.launchEvenGame();
-            case CALC -> CalcGame.launchCalcGame();
-            case GCD -> GcdGame.launchGcdGame();
-            case PROGRESSION -> ProgressionGame.launchProgressionGame();
-            case PRIME -> PrimeGame.launchPrimeGame();
+            case EVEN -> EvenGame.startGame();
+            case CALC -> CalcGame.startGame();
+            case GCD -> GcdGame.startGame();
+            case PROGRESSION -> ProgressionGame.startGame();
+            case PRIME -> PrimeGame.startGame();
             case EXIT -> System.out.println("Goodbye!");
             default -> throw new IllegalStateException("Unexpected values" + selectionGame);
         }
