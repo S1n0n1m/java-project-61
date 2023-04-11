@@ -23,11 +23,11 @@ public class ProgressionGame {
 
     public static void startGame() {
         String gameRules = "What number is missing in the progression?";
-        var QUESTIONS_ANSWER = new String[Engine.QUESTIONS_COUNT][2];
+        var questionsAnswer = new String[Engine.QUESTIONS_COUNT][2];
         for (int i = 0; i < Engine.QUESTIONS_COUNT; i++) {
-            QUESTIONS_ANSWER[i] = generateRoundData();
+            questionsAnswer[i] = generateRoundData();
         }
-        Engine.launchGame(gameRules, QUESTIONS_ANSWER);
+        Engine.launchGame(gameRules, questionsAnswer);
     }
 
     public static String[] generateProgression(int number, int step, int progressionLength) {

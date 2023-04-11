@@ -13,11 +13,11 @@ public class EvenGame {
     }
     public static void startGame() {
         String gameRules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
-        var QUESTIONS_ANSWER = new String[Engine.QUESTIONS_COUNT][2];
+        var questionsAnswer = new String[Engine.QUESTIONS_COUNT][2];
         for (int i = 0; i < Engine.QUESTIONS_COUNT; i++) {
-            QUESTIONS_ANSWER[i] = generateRoundsData();
+            questionsAnswer[i] = generateRoundsData();
         }
-        Engine.launchGame(gameRules, QUESTIONS_ANSWER);
+        Engine.launchGame(gameRules, questionsAnswer);
     }
 
     private static boolean isEven(int currentNumber) {

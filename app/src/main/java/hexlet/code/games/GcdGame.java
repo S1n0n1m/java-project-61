@@ -20,10 +20,10 @@ public class GcdGame {
     }
     public static void startGame() {
         String gameRules = "Find the greatest common divisor of given numbers.";
-        var QUESTIONS_ANSWER = new String[Engine.QUESTIONS_COUNT][2];
+        var questionsAnswer = new String[Engine.QUESTIONS_COUNT][2];
         for (int i = 0; i < Engine.QUESTIONS_COUNT; i++) {
-            QUESTIONS_ANSWER[i] = generateRoundData();
+            questionsAnswer[i] = generateRoundData();
         }
-        Engine.launchGame(gameRules, QUESTIONS_ANSWER);
+        Engine.launchGame(gameRules, questionsAnswer);
     }
 }
