@@ -5,14 +5,17 @@ import hexlet.code.Engine;
 
 public class EvenGame {
     private static final int MAX_RANDOM_NUMBER = 30;
-    private static final String[][] QUESTIONS_ANSWER = new String[Engine.QUESTIONS_COUNT][2];
-
+    public static String[] generateRoundsData() {
+        int questionNumber = (int) (Math.random() * MAX_RANDOM_NUMBER);
+        var questions = String.valueOf(questionNumber);
+        var correctAnswer = isEven(questionNumber) ? "yes" : "no";
+        return new String[] {questions, correctAnswer};
+    }
     public static void startGame() {
         String gameRules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+        var QUESTIONS_ANSWER = new String[Engine.QUESTIONS_COUNT][2];
         for (int i = 0; i < Engine.QUESTIONS_COUNT; i++) {
-            int questionNumber = (int) (Math.random() * MAX_RANDOM_NUMBER);
-            QUESTIONS_ANSWER[i][Engine.QUESTIONS_NUMBER] = String.valueOf(questionNumber);
-            QUESTIONS_ANSWER[i][Engine.ANSWER_NUMBER] = (isEven(questionNumber)) ? "yes" : "no";
+            QUESTIONS_ANSWER[i] = generateRoundsData();
         }
         Engine.launchGame(gameRules, QUESTIONS_ANSWER);
     }

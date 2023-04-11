@@ -22,7 +22,7 @@ public class Engine {
             var currentAnswer = console.nextLine();
             if (!currentAnswer.equals(correctAnswer)) {
                 System.out.println("'" + currentAnswer + "' is wrong answer ;(. Correct answer was '"
-                        + correctAnswer + "'." + "Let's try again, " + username + "!");
+                        + correctAnswer + "'." + " Let's try again, " + username + "!");
                 return;
             }
             System.out.println("Correct!");

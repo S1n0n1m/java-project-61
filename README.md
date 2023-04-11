@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/S1n0n1m/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/63b3b381e73d82eb1a43/maintainability" /></a>
 
-"Even game"  https://asciinema.org/a/xQ4ItfIOumeca6iWpo54h7ey2
+"Even game" [![asciicast](https://asciinema.org/a/xQ4ItfIOumeca6iWpo54h7ey2.svg)](https://asciinema.org/a/xQ4ItfIOumeca6iWpo54h7ey2)
 
 
 
