@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 
 public class CalcGame {
     private static final int MAX_RANDOM_NUMBER = 10;
-    public static String[] generateRoundsData() {
+    public static String[] generateRoundData() {
         char[] mathOperators = {'*', '-', '+'};
         int firstNum = (int) (Math.random() * MAX_RANDOM_NUMBER - 1);
         int secondNum = (int) (Math.random() * MAX_RANDOM_NUMBER - 1);
@@ -37,7 +37,7 @@ public class CalcGame {
         String gameRules = "What is the result of the expression?";
         var questionsAnswer = new String[Engine.QUESTIONS_COUNT][2];
         for (int i = 0; i < Engine.QUESTIONS_COUNT; i++) {
-            questionsAnswer[i] = generateRoundsData();
+            questionsAnswer[i] = generateRoundData();
         }
         Engine.launchGame(gameRules, questionsAnswer);
     }
